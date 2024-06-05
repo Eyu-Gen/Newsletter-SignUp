@@ -13,15 +13,17 @@
 <body>
     <main>
         <div class="container" id="successContainer">
-            <div class="imageSection">
-                <img src="images/icon-success.svg" alt="">
+            <div class="successContainerWrapper">
+                <div class="imageSection">
+                    <img src="images/icon-success.svg" alt="">
+                </div>
+                <p class="heading">Thanks for subscribing!</p>
+                <p class="thanksPara">
+                    A confirmation email has been sent to <span id="displayEmail"></span>. Please open it and click the button inside 
+                    to confirm your subscribtion.
+                </p>
             </div>
-            <p class="heading">Thanks for subscribing!</p>
-            <p class="thanksPara">
-                A confirmation email has been sent to <span id="displayEmail"></span>. Please open it and click the button inside 
-                to confirm your subscribtion.
-            </p>
-            <input type="submit" value="Dismiss message">
+            <input type="submit" id="dismissBtn" value="Dismiss message">
         </div>
 
         <div class="container" id="mainContainer">

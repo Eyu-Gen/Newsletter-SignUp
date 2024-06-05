@@ -21,8 +21,9 @@ document.getElementById("submitBtn").addEventListener("click", function() {
         document.getElementById("email").style.borderColor = "var(--primaryColor)";
         document.head.appendChild(style);
     } else {
-        document.getElementById("successContainer").style.display = "block";
+        document.getElementById("successContainer").style.display = "flex";
         document.getElementById("mainContainer").style.display = "none";
+        document.getElementById("displayEmail").innerHTML = emailValue;
     }
 
     document.getElementById("email").addEventListener("click", function() {
@@ -38,4 +39,8 @@ document.getElementById("submitBtn").addEventListener("click", function() {
         `;
         document.head.appendChild(style);
     });
+});
+
+document.getElementById("dismissBtn").addEventListener("click", function() {
+    location.reload();
 });
