@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyu Gen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/jpg" href="images/yugin.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container" id="successContainer">
+            <div class="imageSection">
+                <img src="images/icon-success.svg" alt="">
+            </div>
+            <p class="heading">Thanks for subscribing!</p>
+            <p class="thanksPara">
+                A confirmation email has been sent to <span id="displayEmail"></span>. Please open it and click the button inside 
+                to confirm your subscribtion.
+            </p>
+            <input type="submit" value="Dismiss message">
+        </div>
+
+        <div class="container" id="mainContainer">
+            <div class="subcontainer" id="detailSubcontainer">
+                <p class="heading">Stay updated!</p>
+                <p class="uppperPara">Join 60,000+ products managers receiving monthly updates on:</p>
+                <div class="listParaConatiner">
+                    <div class="listParaBox">
+                        <div class="imageSection center">
+                            <img src="images/icon-list.svg" alt="">
+                        </div>
+                        <p class="listPara">Product discovery and building what matters</p>
+                    </div>
+                    <div class="listParaBox">
+                        <div class="imageSection center">
+                            <img src="images/icon-list.svg" alt="">
+                        </div>
+                        <p class="listPara">Measuring to ensure updates are a success</p>
+                    </div>
+                    <div class="listParaBox">
+                        <div class="imageSection center">
+                            <img src="images/icon-list.svg" alt="">
+                        </div>
+                        <p class="listPara">And much more!</p>
+                    </div>
+                </div>
+                <div class="emailSection">
+                    <div class="labelBox">
+                        <label for="email" id="emailLabel">Email Address</label>
+                        <div class="errorBox">
+                            <p id="error">Valid email required</p>
+                        </div>
+                    </div>
+                    <input type="text" id="email" placeholder="example@gmail.com" name="email" required>
+                </div>
+                <input type="submit" id="submitBtn" value="Subscribe to monthly newsletter">
+            </div>
+            <div class="subcontainer" id="imageSubcontainer">
+                <div class="imageSection">
+                    <img src="images/illustration-sign-up-desktop.svg" alt="" class="desktopImage">
+                    <img src="images/illustration-sign-up-mobile.svg" alt="" class="mobileImage">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
